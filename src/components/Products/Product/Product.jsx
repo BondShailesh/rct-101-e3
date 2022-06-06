@@ -1,8 +1,11 @@
 import React from "react";
+import { useParams } from "react-router-dom";
 
 const Product = () => {
   // Note: this id should come from api
   const product = { id: 1 };
+ const par = useParams()
+console.log(par);
   return (
     <div data-cy={`product-${product.id}`}>
       <h3 data-cy="product-name"></h3>
